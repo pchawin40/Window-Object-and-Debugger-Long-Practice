@@ -27,3 +27,11 @@ function findElementsOfClass(cls) {
 
     // Your code here
 }
+
+export{
+    findElementById,
+    findFirstElementOfTag,
+    findFirstElementOfClass,
+    findElementsOfTag,
+    findElementsOfClass
+}
