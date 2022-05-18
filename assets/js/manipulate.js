@@ -1,20 +1,24 @@
  function changeTitle() {
     // Change the title of the page to "(Your name)'s Portfolio"
+    document.title = "(Your name)'s Portfolio"
 
-    // Your code here
+
 }
 
  function changeHeader() {
     // Change the name in the h1 of the page to your name
+    document.body.children[0].children[0].innerText = "Your name"
 
-    // Your code here
+
 }
 
  function changeAboutMe() {
     /* Update the first paragraph in the About Me section with a small
      passage about yourself */
 
-    // Your code here
+    document.body.children[1].children[1].innerText = "Small passage about myself"
+    document.body.children[1].children[2].innerText = "Small passage about myself"
+
 }
 
 export{
