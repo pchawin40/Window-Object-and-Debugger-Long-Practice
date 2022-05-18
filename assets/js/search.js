@@ -6,11 +6,16 @@ function findElementById(id) {
 //helper function -> depth first search recursively find element in tree.
 function searchDom(dom, id){
 
-    const stack = [dom];
+    const stack = [];
+        // console.log(dom[0].children);
+    for (let ele of dom){
+        stack.push(ele);
+    }
+    // console.log('TEST', stack);
 
     while(stack.length){
         let popped = stack.pop();
-        debugger;
+        // console.log('TEST', popped.children);
         if(popped.id === id){
             return popped;
         }
